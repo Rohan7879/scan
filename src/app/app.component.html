@@ -1,0 +1,12 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <input type="text" formControlName="name" placeholder="Name" />
+  <input type="text" formControlName="city" placeholder="City" />
+  <button type="submit">Submit</button>
+</form>
+
+<button type="submit" (click)="onclick()">Submit</button>
+
+<ul *ngFor="let i of arry()">
+  <li>{{ i.name }}</li>
+  <li>{{ i.city }}</li>
+</ul>
